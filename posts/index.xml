@@ -67,37 +67,6 @@ mid = (left + right) / 2, 所以此时mid = 6;
     </item>
     
     <item>
-      <title>C例题——数组</title>
-      <link>https://tanhoo2019.github.io/2020/02/c%E6%95%B0%E7%BB%84/</link>
-      <pubDate>Sun, 09 Feb 2020 18:01:01 +0800</pubDate>
-      
-      <guid>https://tanhoo2019.github.io/2020/02/c%E6%95%B0%E7%BB%84/</guid>
-      <description>1 若有定义：
-int a[2][3];
-则以下选项中不越界的正确的访问有：
-A. a[2][0]
-B. a[2][3]
-C. a[1&amp;gt;2][0]
-D. a[0][3]
- 该定义是一个两行三列二维数组，数组的最后一个索引值是总大小-1，因此A、B、D都越界。
-1&amp;gt;2为非，因此a[1&amp;gt;2][0]相当于a[0][0]，没有越界。
- 2 以下程序片段的输出结果是：
-1 2 3 4 5  1. int m[][3] = {1,4,7,2,5,8,3,6,9,}; 2. int i,j,k=2; 3. for ( i=0; i&amp;lt;3; i++ ) { 4. printf(&amp;#34;%d&amp;#34;, m[k][i]); 5. }   A. 369
-B. 不能通过编译
-C. 789
-D.能编译，但是运行时数组下标越界了
- 该定义是一个3*3的二维数组（行没定义，列为3，c99会默认设置行为3），因此可以得到以下数组：
-147
-258
-368
-所以输出结果为369。
- 3 假设int类型变量占用4个字节，定义数组
-int x[10] = {0,2,4};
-则x在内存中占据几个字节？
- x是一个大小为10的数组，每个int类型变量占用4个字节，所以x在内存中一共占有4*10 = 40；</description>
-    </item>
-    
-    <item>
       <title>如何更新blog</title>
       <link>https://tanhoo2019.github.io/2020/01/how_to_use/</link>
       <pubDate>Wed, 15 Jan 2020 16:26:40 +0800</pubDate>
