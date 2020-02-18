@@ -210,7 +210,7 @@
     
     
     <h1 class="post-title post-list-title" itemprop="name headline">
-        <a href="https://tanhoo2019.github.io/2020/02/ssr%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">Ssr搭建教程</a>
+        <a href="https://tanhoo2019.github.io/2020/02/ssr%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">Ssr搭建教程(转)</a>
     </h1>
 
     <div class="post-meta">
@@ -353,14 +353,16 @@ mid = (left + right) / 2, 所以此时mid = 6;
             
             
             
-             新建博文 hugo new posts/newblog.md
-打开新建的newblog.md，编辑blog内容
+            新建博文 hugo new posts/newblog.md
+打开新建的newblog.md，编辑blog内容。
+md编辑器我推荐用Typora，界面简单美观，还挺好用的。
 检查内容 cd 到blog根目录，然后输入以下命令：
 hugo server -D
 更新public静态页面 先cd到blog根目录，然后输入以下命令：
 hugo -D
 推送更新内容 cd到public目录下，然后输入以下命令：
-1 2 3  git add -A git commit -m &#34;我的第二次提交&#34; git push -u origin master  
+1 2 3  git add -A # 将public的所有更新内容添加到git暂存区 git commit -m &#34;我的第二次提交&#34; # 将暂存区文件提交到当前分支 git push -u origin master # 将本地版本库推到github的版本库（repository）   总结 往基于github的Hugo静态博客推送新博文的步骤分为以下几步：
+ 用hugo new命令新建md文件 用hugo -D 生成public html 文件 前往public目录 用git add -A命令将全部更新的文件添加到暂存区 用git commit 命令将暂存区内容添加到分支 用git push 命令将分支内容推到github上去  如果想要更好地理解这个过程，可以去廖雪峰的git学习网站上学，我就是从那边学的，很清晰。
         
     </div>
     <div class="post-footer">
@@ -376,12 +378,12 @@ hugo -D
     
     
     <h1 class="post-title post-list-title" itemprop="name headline">
-        <a href="https://tanhoo2019.github.io/2019/12/blog2/">Blog2</a>
+        <a href="https://tanhoo2019.github.io/1/01/typora-markdown-%E8%AF%AD%E6%B3%95/"></a>
     </h1>
 
     <div class="post-meta">
         <a class="author" href="https://tanhoo2019.github.io" rel="author"><i class="fas fa-user-circle fa-fw"></i>Tyler Wu&nbsp;</a>
-        published on&nbsp;<time datetime=2019-12-06>2019-12-06</time>&nbsp;
+        published on&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;
         
     </div>
     <div class="post-content">
@@ -393,55 +395,19 @@ hugo -D
             
             
             
-            
+            一级标题 二级标题 三级标题 四级标题 这是下划线
+这是删除线
+字体加粗
+字体倾斜
+ 早餐 午餐 晚餐  面包 米饭    这是引用
+ 这是我的博客
         
     </div>
     <div class="post-footer">
-        <a href="https://tanhoo2019.github.io/2019/12/blog2/">Read More</a>
+        <a href="https://tanhoo2019.github.io/1/01/typora-markdown-%E8%AF%AD%E6%B3%95/">Read More</a>
         
     </div>
-</article><article class="post" itemscope itemtype="http://schema.org/Article">
-    
-    
-    
-
-    
-    
-    
-    <h1 class="post-title post-list-title" itemprop="name headline">
-        <a href="https://tanhoo2019.github.io/2019/12/blog/">Blog</a>
-    </h1>
-
-    <div class="post-meta">
-        <a class="author" href="https://tanhoo2019.github.io" rel="author"><i class="fas fa-user-circle fa-fw"></i>Tyler Wu&nbsp;</a>
-        published on&nbsp;<time datetime=2019-12-06>2019-12-06</time>&nbsp;
-        
-    </div>
-    <div class="post-content">
-        
-            
-            
-            
-            
-            
-            
-            
-             My first blog This is my test blog 1  print(&#34;Hello world!&#34;)  
-        
-    </div>
-    <div class="post-footer">
-        <a href="https://tanhoo2019.github.io/2019/12/blog/">Read More</a>
-        
-    </div>
-</article><ul class="pagination"><li class="page-item active">
-                    <span class="page-link">
-                        <a href="/">1</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/page/2/">2</a>
-                    </span>
-                </li></ul></div></div>
+</article></div></div>
             </main>
             <footer class="footer">
     <div class="copyright">

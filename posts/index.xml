@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Ssr搭建教程</title>
+      <title>Ssr搭建教程(转)</title>
       <link>https://tanhoo2019.github.io/2020/02/ssr%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 10 Feb 2020 23:36:06 +0800</pubDate>
       
@@ -72,32 +72,16 @@ mid = (left + right) / 2, 所以此时mid = 6;
       <pubDate>Wed, 15 Jan 2020 16:26:40 +0800</pubDate>
       
       <guid>https://tanhoo2019.github.io/2020/01/how_to_use/</guid>
-      <description> 新建博文 hugo new posts/newblog.md
-打开新建的newblog.md，编辑blog内容
+      <description>新建博文 hugo new posts/newblog.md
+打开新建的newblog.md，编辑blog内容。
+md编辑器我推荐用Typora，界面简单美观，还挺好用的。
 检查内容 cd 到blog根目录，然后输入以下命令：
 hugo server -D
 更新public静态页面 先cd到blog根目录，然后输入以下命令：
 hugo -D
 推送更新内容 cd到public目录下，然后输入以下命令：
-1 2 3  git add -A git commit -m &amp;#34;我的第二次提交&amp;#34; git push -u origin master  </description>
-    </item>
-    
-    <item>
-      <title>Blog2</title>
-      <link>https://tanhoo2019.github.io/2019/12/blog2/</link>
-      <pubDate>Fri, 06 Dec 2019 16:02:05 +1100</pubDate>
-      
-      <guid>https://tanhoo2019.github.io/2019/12/blog2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://tanhoo2019.github.io/2019/12/blog/</link>
-      <pubDate>Fri, 06 Dec 2019 00:03:30 +1100</pubDate>
-      
-      <guid>https://tanhoo2019.github.io/2019/12/blog/</guid>
-      <description> My first blog This is my test blog 1  print(&amp;#34;Hello world!&amp;#34;)  </description>
+1 2 3  git add -A # 将public的所有更新内容添加到git暂存区 git commit -m &amp;#34;我的第二次提交&amp;#34; # 将暂存区文件提交到当前分支 git push -u origin master # 将本地版本库推到github的版本库（repository）   总结 往基于github的Hugo静态博客推送新博文的步骤分为以下几步：
+ 用hugo new命令新建md文件 用hugo -D 生成public html 文件 前往public目录 用git add -A命令将全部更新的文件添加到暂存区 用git commit 命令将暂存区内容添加到分支 用git push 命令将分支内容推到github上去  如果想要更好地理解这个过程，可以去廖雪峰的git学习网站上学，我就是从那边学的，很清晰。</description>
     </item>
     
     <item>
